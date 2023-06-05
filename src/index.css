@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:focus{
+  outline: none;
+}
+
+@layer components {
+  .input-form {
+    @apply rounded-sm p-1 border-solid border-slate-300 border-2 valid:border-slate-300
+  }
+
+  .input-card {
+    @apply rounded-sm p-1 border-solid border-slate-300 valid:border-slate-300 border-b-2 
+  }
+
+  .main-element {
+    @apply bg-slate-50 flex flex-col items-center w-screen h-screen gap-6
+  }
+
+  .base-form {
+    @apply rounded-lg border-solid border-slate-300 border-2 p-4
+  }
+
+  .base-card {
+    @apply rounded-lg border-solid border-slate-300 border-2 p-1
+  }
+  
+}
